@@ -3,9 +3,9 @@ package viktor.com;
 import viktor.com.lesson1.OperatorsDemo;
 
 public class Main {
-
     public static void main(String[] args) {
 	// write your code here
-        System.out.println(OperatorsDemo.isSeven(27));
+        OperatorsDemo.isCalendar(31, 3, 2021 );
+
     }
 }
