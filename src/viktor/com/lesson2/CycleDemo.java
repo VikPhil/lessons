@@ -86,14 +86,18 @@ public class CycleDemo {
     //home work number 17
     public static void formatNumber(long number) {
 
-        long digit;
+        long digitOne;
+        long digitTwo;
+        long digitThree;
 
         do {
-            digit = number % 1000;
-            System.out.println(digit);
+            digitThree = number % 1000;
             number /= 1000;
+            digitTwo = number % 1000;
+            number /= 1000;
+            digitOne = number % 1000;
 
         }while(number % 1000 != 0);
-
+        System.out.println(digitOne + " " + digitTwo + " " + digitThree);
     }
 }
