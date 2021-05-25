@@ -49,6 +49,27 @@ public class CycleDemo {
     /////////////////////////////////////////////////////////////////////
 
     //Home work number 15
+    public static void primeNumber() {
+
+        int counter = 0;
+
+        for(int i = 50; i <= 70; i++) {
+            boolean prime = true;
+            for (int j = 2; j <= 10; j++) {
+                if(i % j == 0) {
+                    prime = false;
+                    break;
+                }
+            }
+            if(prime) {
+                counter++;
+                if (counter == 2) {
+                    System.out.println(i);
+                }
+            }
+        }
+
+    }
     ////////////////////////////////////////////////////////////////////
 
     //Home work number 16
@@ -65,18 +86,14 @@ public class CycleDemo {
     //home work number 17
     public static void formatNumber(long number) {
 
-        long digitOne;
-        long digitTwo;
-        long digitThree;
+        long digit;
 
         do {
-            digitThree = number % 1000;
+            digit = number % 1000;
+            System.out.println(digit);
             number /= 1000;
-            digitTwo = number % 1000;
-            number /= 1000;
-            digitOne = number % 1000;
-            number /= 1000;
-        } while (number % 1000 != 0);
-        System.out.println(digitOne + " " + digitTwo + " " + digitThree);
+
+        }while(number % 1000 != 0);
+
     }
 }
