@@ -5,7 +5,7 @@ import viktor.com.lessonArrays.*;
 public class Main {
     public static void main(String[] args) {
 	// write your code here
-        int [] arrayNumbers = new int[10];
+        //int [] arrayNumbers = new int[10];
         //ArrayEndElement.lastOfNumber(arrayNumbers);
         ///////////////////////////////////////////////
 
@@ -19,6 +19,7 @@ public class Main {
 
         //ArrayReversePosition.reverseArray(arrayNumbers);
         //////////////////////////////////////////////////
+
         int arraySquare[][] = new int [5][5];
         ArrayButterfly.squareArray(arraySquare);
 
