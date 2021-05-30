@@ -2,14 +2,13 @@ package viktor.com.lessonArrays;
 
 //Home work number 20
 public class ArrayMaxElement {
-    public static void maxNumberIndex() {
+    public static void maxNumberIndex(int [] arrayMaxNumber) {
 
-        int [] arrayMaxNumber = new int[10];
         int maxElement = 0;
         int maxElementIndex = 0;
 
-        for(int i = 0; i < 10; i++) {
-            arrayMaxNumber[i] = (int)(Math.random() * 10 + 1);
+        ArrayUtils.randomFunction(arrayMaxNumber);
+        for(int i = 0; i < arrayMaxNumber.length; i++) {
             System.out.print( arrayMaxNumber[i] + " ");
             if(arrayMaxNumber[i] > maxElement) {
                 maxElement = arrayMaxNumber[i];
@@ -17,7 +16,7 @@ public class ArrayMaxElement {
             }
         }
         System.out.println();
-        System.out.println("Максимальное значение: " + maxElement + " Индекс: " + maxElementIndex);
+        System.out.println("Maximum volume: " + maxElement + " Index: " + maxElementIndex);
 
     }
 }
