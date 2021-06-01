@@ -1,27 +1,27 @@
 package viktor.com;
 
 import viktor.com.lessonArrays.*;
+import viktor.com.library.Book;
 
 public class Main {
     public static void main(String[] args) {
 	// write your code here
-        //int [] arrayNumbers = new int[10];
-        //ArrayEndElement.lastOfNumber(arrayNumbers);
-        ///////////////////////////////////////////////
+        Book oneBook = new Book();
+        System.out.println(oneBook.toString() + '\n');
 
-        int arrayForEven[] = {28, 13, 47, 2, 10, 44, 100, 7, 25, 54};
-        //ArrayEvenPosition.evenPositions(arrayForEven);
-        //System.out.println();
-        ////////////////////////////////////////////////
+        Book twoBook = new Book("Три мушкетера", "Александр Дюма", 1844);
+        System.out.println(twoBook.toString());
 
-        //ArrayMaxElement.maxNumberIndex(arrayNumbers);
-        ////////////////////////////////////////////////
+        Book [] books = new Book[3];
 
-        //ArrayReversePosition.reverseArray(arrayNumbers);
-        //////////////////////////////////////////////////
-
-        int arraySquare[][] = new int [5][5];
-        ArrayButterfly.squareArray(arraySquare);
+        for (int i = 0; i < books.length; i++) {
+            books[i] = new Book();
+            books[i].getData();
+            System.out.println();
+        }
+        for (int j = 0; j < books.length; j++) {
+            System.out.println(books[j].toString());
+        }
 
     }
 }
