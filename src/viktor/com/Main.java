@@ -1,27 +1,34 @@
 package viktor.com;
 
 import viktor.com.lessonArrays.*;
+import viktor.com.lessonString.*;
 import viktor.com.library.Book;
 
 public class Main {
     public static void main(String[] args) {
 	// write your code here
-        Book oneBook = new Book();
-        System.out.println(oneBook.toString() + '\n');
+        //String str = UtilsString.enterText();
+        /**
+         * Home work number 26
+         */
+        //SearchPunctuation.searchForPunctuationMarks(str);
 
-        Book twoBook = new Book("Три мушкетера", "Александр Дюма", 1844);
-        System.out.println(twoBook.toString());
+        /**
+         * Home work number 27
+         */
+        //SearchWord.searchForWords(str);
 
-        Book [] books = new Book[3];
+        /**
+         * Home work number 28
+         */
+        //SearchLetter.searchLastLetter(str);
 
-        for (int i = 0; i < books.length; i++) {
-            books[i] = new Book();
-            books[i].getData();
-            System.out.println();
-        }
-        for (int j = 0; j < books.length; j++) {
-            System.out.println(books[j].toString());
-        }
-
+        /**
+         * Home work number 31
+         */
+        long start = System.currentTimeMillis();
+        AddingString.addingString();
+        //AddingString.addingStringBuilder();
+        System.out.println("Время выполнения в милисекундах: " + (System.currentTimeMillis()-start));
     }
 }
