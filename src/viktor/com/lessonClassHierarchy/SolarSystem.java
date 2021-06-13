@@ -5,7 +5,7 @@ import java.util.Objects;
 public class SolarSystem {
 
      protected int radiusOfPlanet;
-     protected long massOfPlanet;
+     protected String massOfPlanet;
      private final int NUMBER_PLANET = 8;
 
      enum Planet { Mercury, Venus, Earth, Mars,
@@ -25,11 +25,11 @@ public class SolarSystem {
          this.radiusOfPlanet = radiusOfPlanet;
      }
 
-     public long getMassOfPlanet() {
+     public String getMassOfPlanet() {
          return massOfPlanet;
      }
 
-     public void setMassOfPlanet(long massOfPlanet) {
+     public void setMassOfPlanet(String massOfPlanet) {
          this.massOfPlanet = massOfPlanet;
      }
 
@@ -48,27 +48,8 @@ public class SolarSystem {
 
     @Override
     public String toString() {
-        return "Number of planets " + NUMBER_PLANET;
+        return "Number of planets: " + NUMBER_PLANET;
     }
 }
 
- class Earth extends SolarSystem {
-
-    protected int numberOfSatellites;
-
-    public Earth() {  }
-
-    public Earth(int count, int radius, long mass) {
-
-        this.numberOfSatellites = count;
-        radiusOfPlanet = radius;
-        massOfPlanet = mass;
-
-    }
-
-    /*public void show() {
-        Earth earth = new Earth(1, 6371, 59_761_024);
-        System.out.println();
-    }*/
-}
 
