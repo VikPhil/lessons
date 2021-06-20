@@ -5,14 +5,14 @@ package viktor.com.lessonString;
  */
 public class AddingString {
 
-    public static int number = 100000;
+    public static final int NUMBER = 100000;
 
     /**
      * String method
      */
     public static void addingString() {
         String str = "aaabbbccc";
-        for(int i = 0; i < number; i++) {
+        for(int i = 0; i < NUMBER; i++) {
             str+="aaabbbccc";
         }
     }
@@ -22,7 +22,7 @@ public class AddingString {
      */
     public static void addingStringBuilder() {
         StringBuilder str = new StringBuilder();
-        for(int i = 0; i < number; i++) {
+        for(int i = 0; i < NUMBER; i++) {
             str.append("aaabbbccc");
         }
     }

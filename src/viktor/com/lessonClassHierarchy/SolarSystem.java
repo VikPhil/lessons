@@ -6,7 +6,7 @@ public class SolarSystem {
 
      protected int radiusOfPlanet;
      protected String massOfPlanet;
-     private final int NUMBER_PLANET = 8;
+     private static final int NUMBER_PLANET = 8;
 
      enum Planet { Mercury, Venus, Earth, Mars,
                    Jupiter, Saturn, Uranus, Neptune; }

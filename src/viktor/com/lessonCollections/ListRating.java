@@ -13,10 +13,8 @@ public class ListRating {
 
         List<Integer> listRating = new ArrayList<>(10);
 
-        for (int i = 0; i < 10; i++) {
-            int a = ThreadLocalRandom.current().nextInt(0, 10);
-            listRating.add(a);
-        }
+        UtilsCollection.randomizerCollection(listRating);
+
         System.out.println(listRating);
 
         Iterator<Integer> iterator = listRating.iterator();
@@ -26,6 +24,6 @@ public class ListRating {
                 iterator.remove();
             }
         }
-        System.out.println(listRating);
+        System.out.println("List of best rating: " + listRating);
     }
 }
