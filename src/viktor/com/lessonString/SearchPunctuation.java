@@ -5,28 +5,16 @@ package viktor.com.lessonString;
  */
 public class SearchPunctuation {
 
-    public static void searchForPunctuationMarks(String str) {
+    public static int searchForPunctuationMarks(String str) {
 
-        int count = 0;
-        for(int i = 0; i < str.length(); i++) {
-            switch (str.charAt(i)) {
-                case ',': count++;
-                break;
-                case '.': count++;
-                break;
-                case '!': count++;
-                break;
-                case '?': count++;
-                break;
-                case '-': count++;
-                break;
-                case '(': count++;
-                break;
-                case ')': count++;
-                break;
+        int punctuation = 0;
+        for (int i = 0; i < str.length(); i++) {
+            char symbol = str.charAt(i);
+            if (symbol == ',' || symbol == '!' || symbol == '%' || symbol == '$' || symbol == '?' || symbol == '.') {
+                punctuation++;
             }
         }
-        System.out.println("Count punctuation marks: " + count);
+        return punctuation;
     }
 
 }

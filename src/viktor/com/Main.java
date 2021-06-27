@@ -7,27 +7,23 @@ import viktor.com.lessonCollections.HighScore;
 import viktor.com.lessonCollections.ListRating;
 import viktor.com.lessonCollections.RemoveNumber;
 import viktor.com.lessonCollections.listMap.MapHash;
+import viktor.com.workingWithFiles.Output;
+import viktor.com.workingWithFiles.Realization;
+
+import java.io.*;
+import java.util.*;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 	// write your code here
-       /* SolarSystem system = new SolarSystem();
-        Earth earth = new Earth();
-        Moon moon = new Moon();
-        System.out.println(system);
-        system.show();
-        earth.show();
-        moon.show();
-        */
-
-        /*System.out.println("Home work number 39");
-        ListRating.listOfRating();
-
-        System.out.println("Home work number 40");
-        RemoveNumber.removingDublicate();
+        /**
+         * Home work number 47
          */
-        System.out.println("Home work number 41");
-        HighScore.highestRating();
+        //Realization.show();
 
+        /**
+         * Home work number 48
+         */
+        Output.outputStream();
     }
 }
