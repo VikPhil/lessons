@@ -7,6 +7,7 @@ import viktor.com.lessonCollections.HighScore;
 import viktor.com.lessonCollections.ListRating;
 import viktor.com.lessonCollections.RemoveNumber;
 import viktor.com.lessonCollections.listMap.MapHash;
+import viktor.com.workingWithFiles.FileHierarchy;
 import viktor.com.workingWithFiles.Output;
 import viktor.com.workingWithFiles.Realization;
 
@@ -17,6 +18,10 @@ public class Main {
     public static void main(String[] args) throws IOException {
 	// write your code here
         /**
+         * Home work number 46
+         */
+        FileHierarchy.showHierarchy();
+        /**
          * Home work number 47
          */
         //Realization.show();
@@ -24,6 +29,6 @@ public class Main {
         /**
          * Home work number 48
          */
-        Output.outputStream();
+        //Output.outputStream();
     }
 }
