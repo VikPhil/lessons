@@ -1,5 +1,8 @@
 package viktor.com.lessonArrays;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class ArrayUtils {
 
     public static void printArray(int [] array) {
@@ -10,7 +13,13 @@ public class ArrayUtils {
     //Заполняет случайными числами
     public static void randomFunction(int [] array) {
         for (int i = 0; i < array.length; i++) {
-            array[i] = (int)(Math.random() * 100 + 1);
+            array[i] = (int)(Math.random() * 20 + 1);
+        }
+    }
+    //Заполнение случайными числами для листа
+    public static void randomFunctionList(List<Integer> e, int count) {
+        for (int i = 0; i < count; i++) {
+            e.add(i, (int)(Math.random() * 20 + 1));
         }
     }
 
