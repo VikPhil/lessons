@@ -1,5 +1,8 @@
 package viktor.com;
 
+import viktor.com.finalTest.ArrayAndNumbers;
+import viktor.com.finalTest.CarRealization;
+import viktor.com.finalTest.ThreeNumbers;
 import viktor.com.lessonClassHierarchy.Earth;
 import viktor.com.lessonClassHierarchy.Moon;
 import viktor.com.lessonClassHierarchy.SolarSystem;
@@ -16,21 +19,21 @@ import java.io.*;
 import java.util.*;
 
 public class Main {
-    public static void main(String[] args) throws InterruptedException {
-	// write your code here
+    public static void main(String[] args)  {
+        // write your code here
         /**
-         * Home work number 52
+         * Home work test number 1
          */
-        //ShowThread.output();
+        //ThreeNumbers.realization();
 
         /**
-         * Home work number 53
+         * Home work test number 2
          */
-        //ShowMaxNumber.output();
+        //ArrayAndNumbers.implementation();
 
         /**
-         * Home work number 54
+         * Home work test number 3
          */
-        ShowThreadFile.output();
+        //CarRealization.show();
     }
 }
