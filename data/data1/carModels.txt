@@ -1,0 +1,10 @@
+ <Honda> : <CIVIC> : 1
+ <Honda> : <CIVIC> : 1
+ <Honda> : <CIVIC> : 1
+ <Honda> : <CIVIC> : 1
+ <Honda> : <PILOT> : 2
+ <Honda> : <PILOT> : 2
+ <Honda> : <PILOT> : 2
+ <Honda> : <ACCORD> : 3
+ <Honda> : <ACCORD> : 3
+ <Honda> : <ACCORD> : 3

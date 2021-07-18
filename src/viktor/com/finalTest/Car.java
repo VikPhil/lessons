@@ -4,15 +4,12 @@ import java.util.Objects;
 
 public class Car {
     private String name;
-    public enum carModel {
-        CIVIC, PILOT, ACCORD;
-    }
-    private carModel carModel;
+    private CarModel carModel;
     private int engineCapacity;
 
     public Car() { }
 
-    public Car(String n, carModel cm, int ec) {
+    public Car(String n, CarModel cm, int ec) {
         this.name = n;
         this.carModel = cm;
         this.engineCapacity = ec;
@@ -26,11 +23,11 @@ public class Car {
         this.name = name;
     }
 
-    public Car.carModel getCarModel() {
+    public CarModel getCarModel() {
         return carModel;
     }
 
-    public void setCarModel(Car.carModel carModel) {
+    public void setCarModel(CarModel carModel) {
         this.carModel = carModel;
     }
 
@@ -57,10 +54,8 @@ public class Car {
 
     @Override
     public String toString() {
-        return "Car{" +
-                "name='" + name + '\'' +
-                ", carModel=" + carModel +
-                ", engineCapacity=" + engineCapacity +
-                '}';
+        return '<' + name + '>' + " : " +
+               '<' + carModel + '>' + " : " +
+                engineCapacity + '\n';
     }
 }
